@@ -1,0 +1,644 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/PlusJakartaSans-Light.woff2") format("woff2");
+}
+/* vietnamese */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2");
+}
+
+html {
+  font-family: "Plus Jakarta Sans";
+}
+
+body {
+  margin: auto;
+}
+
+.parent__container {
+  background: #e3e3e3;
+  padding: 64px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+}
+
+.header h4,
+.deatil__footer h4 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #3563e9;
+}
+.seach {
+  display: flex;
+  width: 492px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 70px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.wrap__seach {
+  display: flex;
+  gap: 20px;
+}
+
+.wrap__setting {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.seach p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: -0.02em;
+  color: #596780;
+}
+
+.content__wrap {
+  padding: 32px 64px 64px 64px;
+  background: #f6f7f9;
+}
+
+.wrap__card {
+  width: 49%;
+}
+
+.card__1 {
+  background: #54a6ff;
+  border-radius: 10px;
+  padding-top: 24px;
+  padding-left: 24px;
+  /* padding-right: 260px; */
+}
+
+.card__2 {
+  background: #3563e9;
+  border-radius: 10px;
+  padding-top: 24px;
+  padding-left: 24px;
+  /* padding-right: 260px; */
+}
+
+.detail__wrap p {
+  display: flex;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #ffff;
+}
+
+#ease {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.detail__wrap button {
+  background: #3563e9;
+  color: #ffff;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-width: 0px;
+}
+
+.mental {
+  display: flex;
+  justify-content: center;
+}
+.mental2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.wrap__showcase {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap__card1 {
+  padding-top: 32px;
+  padding-left: 64px;
+}
+
+#button__2 {
+  background: #54a6ff;
+  color: #ffff;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-width: 0px;
+}
+
+.pick__1 {
+  display: flex;
+  flex-direction: column;
+  background: #ffff;
+  border-radius: 10px;
+  margin-top: 34px;
+}
+
+.checkmark {
+  flex-direction: row;
+}
+
+.pick {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.pick__up__content {
+  display: flex;
+  padding: 20px;
+  gap: 24px;
+}
+.line__1 {
+  margin-top: 25px;
+  height: 60px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  transform: rotate(360deg);
+}
+
+.line__2 {
+  margin-top: 25px;
+  height: 60px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  transform: rotate(360deg);
+}
+
+.location h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+}
+
+.location__wrap select {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+  border-style: none;
+  padding-right: 24px;
+}
+
+.date h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+}
+
+.date__wrap select {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+  border-style: none;
+  padding-right: 24px;
+}
+
+.time h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+}
+
+.time__wrap select {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+  border-style: none;
+  padding-right: 24px;
+}
+
+.background__img img {
+  padding: 20px;
+  transform: rotate(-90deg);
+}
+
+.background__box {
+  margin-top: 90px;
+  align-items: center;
+  background: #3563e9;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  transform: rotate(-90deg);
+}
+
+.pick__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.popular__car__view {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+#view {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3563e9;
+}
+
+.car img {
+  margin: 64px 0;
+  width: 232px;
+}
+.popular__car h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #90a3bf;
+  padding: 10px 20px;
+}
+
+.car_card_1 {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0 20px 10px;
+}
+
+.car_card_1 h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #1a202c;
+}
+
+.wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.car_card_1 p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+}
+
+.detail {
+  display: flex;
+  gap: 16px;
+}
+
+.wrap__1 {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+
+.wrap__2 {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+
+.wrap__3 {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+}
+
+#h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  color: #1a202c;
+}
+
+span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #90a3bf;
+}
+
+.car_card_1 button {
+  background: #3563e9;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-style: none;
+}
+
+.button__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.Wrap__showcase__2,
+.Wrap__showcase__3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sport {
+  display: flex;
+  flex-direction: column;
+}
+
+#net {
+  margin-top: -20px;
+}
+
+.Recomendation__Car h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #90a3bf;
+}
+
+button {
+  background: #3563e9;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-style: none;
+}
+
+#one {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  align-items: center;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #90a3bf;
+}
+
+.wrap__button__down {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 438px;
+}
+
+.wrap img :nth-child(2) {
+  max-width: 232px;
+  width: 232px;
+}
+
+.car_card_1 p {
+  margin: 0;
+}
+
+.sample {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0 20px 10px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 80px 60px 0 60px;
+}
+
+#about {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+}
+#about__detail {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(19, 19, 19, 0.6);
+}
+
+#Community {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+}
+#Community__detail {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(19, 19, 19, 0.6);
+}
+
+#socials {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+}
+#socials__detail {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(19, 19, 19, 0.6);
+}
+
+.line {
+  border: 1px solid rgba(19, 19, 19, 0.16);
+  transform: rotate(-180deg);
+}
+
+.wrap__footer {
+}
+
+.copyright {
+}
+
+.wrap__about {
+}
+
+#right,
+#policy,
+#terms {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #1a202c;
+  mix-blend-mode: normal;
+}
+/* sample */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .wrap__showcase {
+    display: none;
+  }
+
+  .Wrap__showcase__2 {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .Wrap__showcase__3 {
+    flex-direction: column;
+  }
+  .wrap__card {
+    width: "100%";
+    margin-right: 0;
+  }
+  .content__wrap {
+    padding: 0;
+  }
+
+  .mental img {
+    display: none;
+  }
+  .mental2 img {
+    display: none;
+  }
+  .pick__wrap {
+    flex-direction: column;
+  }
+  .popular__car {
+    flex-direction: column;
+  }
+  .Recomendation__Car {
+    flex-direction: column;
+  }
+}
