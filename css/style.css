@@ -50,6 +50,10 @@ body {
   padding-right: 32px;
 }
 
+.align__1 {
+  padding: 12px;
+}
+
 .header__2 {
   display: none;
   align-items: center;
@@ -65,7 +69,6 @@ body {
   display: flex;
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 10px;
-  /* padding: 12px; */
   align-items: center;
 }
 
@@ -236,6 +239,7 @@ body {
 }
 
 .checkmark {
+  margin-right: 8px;
   flex-direction: row;
 }
 
@@ -399,8 +403,15 @@ body {
 .wrap__1,
 .wrap__2,
 .wrap__3 {
+  margin-right: 16px;
   align-items: center;
   display: flex;
+}
+
+.wrap__1 p,
+.wrap__2 p,
+.wrap__3 p {
+  margin-left: 6px;
 }
 
 #h4 {
