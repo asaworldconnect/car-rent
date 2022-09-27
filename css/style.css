@@ -78,6 +78,12 @@ body {
   justify-content: space-between;
 }
 
+.car {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .filter {
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 10px;
@@ -339,8 +345,8 @@ body {
 }
 
 .car img {
-  margin: 64px 0;
-  width: 232px;
+  margin: 64px 26px;
+  max-width: 232px;
 }
 .popular__car h4 {
   font-weight: 600;
@@ -356,7 +362,8 @@ body {
 .car_card_1 {
   background: #ffffff;
   border-radius: 10px;
-  padding: 0 20px 10px;
+  padding: 24px;
+  margin-right: 32px;
 }
 
 .car_card_1 h3 {
