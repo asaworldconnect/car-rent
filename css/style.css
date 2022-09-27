@@ -46,13 +46,52 @@ body {
   border: 1px solid rgba(195, 212, 233, 0.4);
   justify-content: space-between;
   margin-bottom: 20px;
-  padding-top: 40px;
   padding-left: 60px;
   padding-right: 32px;
-  padding-bottom: 40px;
+}
+
+.header__2 {
+  display: none;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 34px 24px 24px 32px;
+  padding-right: 32px;
+}
+
+.wrap__seach__2 {
+  display: flex;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 10px;
+  /* padding: 12px; */
+  align-items: center;
+}
+
+.wrap__seach__2 img {
+  margin-right: 8px;
+}
+
+.picture__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.filter__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header h4,
+.header__2 h4,
 .deatil__footer h4 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -70,19 +109,21 @@ body {
   background: #ffffff;
   border: 1px solid rgba(195, 212, 233, 0.4);
   border-radius: 70px;
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
   justify-content: space-between;
 }
 
 .wrap__seach {
   display: flex;
-  gap: 20px;
 }
 
 .wrap__setting {
   display: flex;
   align-items: center;
-  gap: 20px;
+}
+
+.wrap__setting div {
+  margin-right: 20px;
 }
 
 .seach p {
@@ -112,7 +153,6 @@ body {
   border-radius: 10px;
   padding-top: 24px;
   padding-left: 24px;
-  /* padding-right: 260px; */
 }
 
 .card__2 {
@@ -120,7 +160,7 @@ body {
   border-radius: 10px;
   padding-top: 24px;
   padding-left: 24px;
-  /* padding-right: 260px; */
+  padding-bottom: 8px;
 }
 
 .detail__wrap p {
@@ -154,14 +194,10 @@ body {
   border-width: 0px;
 }
 
-.mental {
-  display: flex;
-  justify-content: center;
-}
+.mental,
 .mental2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 8px;
 }
 
 .wrap__showcase {
@@ -184,12 +220,13 @@ body {
   border-width: 0px;
 }
 
-.pick__1 {
+.pick__1,
+.pick__2 {
   display: flex;
   flex-direction: column;
   background: #ffff;
   border-radius: 10px;
-  margin-top: 34px;
+  padding: 24px 48px;
 }
 
 .checkmark {
@@ -199,23 +236,16 @@ body {
 .pick {
   align-items: center;
   display: flex;
-  gap: 8px;
-  padding-top: 20px;
-  padding-left: 20px;
 }
 
 .pick__up__content {
   display: flex;
-  padding: 20px;
-  gap: 24px;
-}
-.line__1 {
-  margin-top: 25px;
-  height: 60px;
-  border: 1px solid rgba(195, 212, 233, 0.4);
-  transform: rotate(360deg);
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
 }
 
+.line__1,
 .line__2 {
   margin-top: 25px;
   height: 60px;
@@ -223,50 +253,26 @@ body {
   transform: rotate(360deg);
 }
 
-.location h4 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: #1a202c;
+.location__wrap {
+  margin-right: 20px;
 }
 
-.location__wrap select {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: #90a3bf;
-  border-style: none;
-  padding-right: 24px;
+.date__wrap {
+  margin: 0px 24px 0px 24px;
 }
 
-.date h4 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: #1a202c;
+.time__wrap {
+  margin-left: 24px;
 }
 
-.date__wrap select {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: #90a3bf;
-  border-style: none;
-  padding-right: 24px;
+.location__wrap,
+.date__wrap,
+.time__wrap {
+  width: 33%;
 }
 
+.location h4,
+.date h4,
 .time h4 {
   font-weight: 700;
   font-size: 16px;
@@ -277,6 +283,8 @@ body {
   color: #1a202c;
 }
 
+.location__wrap select,
+.date__wrap select,
 .time__wrap select {
   font-weight: 500;
   font-size: 12px;
@@ -291,21 +299,25 @@ body {
 
 .background__img img {
   padding: 20px;
-  transform: rotate(-90deg);
 }
 
 .background__box {
-  margin-top: 90px;
+  background: rgba(16, 50, 147, 0.28);
+  border-radius: 10px;
+  margin: 50px;
   align-items: center;
   background: #3563e9;
   border-radius: 10px;
-  width: 60px;
-  height: 60px;
-  transform: rotate(-90deg);
 }
 
 .pick__wrap {
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pick__wrap__2 {
+  display: none;
   justify-content: space-between;
   margin-top: 20px;
 }
@@ -373,26 +385,15 @@ body {
 }
 
 .detail {
-  display: flex;
-  gap: 16px;
-}
-
-.wrap__1 {
   align-items: center;
   display: flex;
-  gap: 6px;
 }
 
-.wrap__2 {
-  align-items: center;
-  display: flex;
-  gap: 6px;
-}
-
+.wrap__1,
+.wrap__2,
 .wrap__3 {
   align-items: center;
   display: flex;
-  gap: 6px;
 }
 
 #h4 {
@@ -407,7 +408,6 @@ span {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  display: flex;
   align-items: center;
   color: #90a3bf;
 }
@@ -430,7 +430,6 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
 }
 
 .Wrap__showcase__2,
@@ -445,6 +444,11 @@ span {
 }
 
 #net {
+  margin-top: -20px;
+  text-decoration-line: line-through;
+}
+
+#sport {
   margin-top: -20px;
 }
 
@@ -486,7 +490,6 @@ button {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  gap: 438px;
 }
 
 .wrap img :nth-child(2) {
@@ -494,66 +497,45 @@ button {
   width: 232px;
 }
 
-.car_card_1 p {
-  margin: 0;
-}
-
 .sample {
   background: #ffffff;
   border-radius: 10px;
-  padding: 0 20px 10px;
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: #ffffff;
   padding: 80px 60px 0 60px;
 }
 
-#about {
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 150%;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: #1a202c;
-}
-#about__detail {
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: rgba(19, 19, 19, 0.6);
+.wrap__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-#Community {
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 150%;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: #1a202c;
-}
-#Community__detail {
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: rgba(19, 19, 19, 0.6);
+.wrap__about {
+  display: flex;
 }
 
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 60px;
+}
+
+.wrap__copyright {
+  display: flex;
+}
+
+.about,
+.Community,
+.socials {
+  margin-right: 60px;
+}
+
+#about,
+#Community,
 #socials {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -564,13 +546,14 @@ button {
   letter-spacing: -0.02em;
   color: #1a202c;
 }
+#about__detail,
+#Community__detail,
 #socials__detail {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  display: flex;
   align-items: center;
   letter-spacing: -0.02em;
   color: rgba(19, 19, 19, 0.6);
@@ -581,18 +564,10 @@ button {
   transform: rotate(-180deg);
 }
 
-.wrap__footer {
-}
-
-.copyright {
-}
-
-.wrap__about {
-}
-
 #right,
 #policy,
 #terms {
+  margin-right: 60px;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
@@ -604,41 +579,247 @@ button {
   color: #1a202c;
   mix-blend-mode: normal;
 }
-/* sample */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .wrap__showcase {
+.sample__wrap {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.sample__car img {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  margin: 32px 40px 38px 59px;
+  max-width: 142px;
+}
+
+.p {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .content__wrap {
+    background-color: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .header {
     display: none;
   }
 
-  .Wrap__showcase__2 {
-    flex-direction: column;
-    padding: 10px;
+  .header__2 {
+    display: block;
+    max-width: 367px;
   }
-  .Wrap__showcase__3 {
-    flex-direction: column;
+
+  .wrap__seach__2 {
+    display: flex;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 10px;
+    padding: 0px 12px;
+    align-items: center;
   }
+
   .wrap__card {
-    width: "100%";
-    margin-right: 0;
+    width: 100%;
   }
-  .content__wrap {
-    padding: 0;
+
+  .card__1 {
+    padding: 19px 112px 4px 16px;
+  }
+
+  .location__wrap,
+  .date__wrap,
+  .time__wrap {
+    width: 100%;
   }
 
   .mental img {
+    max-width: 160px;
+    margin-top: 26px;
+    margin-left: 53px;
+  }
+
+  .mental {
+    display: block;
+  }
+
+  .detail__wrap p {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+  }
+
+  #ease {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .card__2 {
     display: none;
   }
-  .mental2 img {
-    display: none;
-  }
+
   .pick__wrap {
+    display: none;
     flex-direction: column;
   }
-  .popular__car {
+
+  .pick__wrap__2 {
+    display: flex;
     flex-direction: column;
   }
-  .Recomendation__Car {
+
+  .background__box {
+    content-visibility: auto;
+    max-width: 60px;
+    margin-left: 146px;
+  }
+
+  .pick__1 {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 20px;
+    margin-bottom: -52px;
+  }
+
+  .pick__2 {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 20px;
+    margin-top: -52px;
+  }
+
+  .location__wrap select,
+  .date__wrap select,
+  .time__wrap select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+  }
+
+  .pick__up__content {
+    display: flex;
+
+    padding: 0px;
+  }
+
+  .parent__container {
+    padding: 20px 24px;
+  }
+
+  .Wrap__showcase__2,
+  .Wrap__showcase__3 {
+    visibility: visible;
     flex-direction: column;
+  }
+
+  .car img {
+    max-height: 64px;
+    max-width: 150px;
+    margin: 28px 30px 40px 16px;
+  }
+
+  .detail {
+    margin-left: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .car_card_1 {
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+
+  .wrap__button__down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 49px;
+  }
+
+  .wrap__footer {
+    display: block;
+  }
+
+  .wrap__about {
+    flex-direction: column;
+  }
+
+  .copyright {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .detail__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .sample {
+    padding: 16px;
+  }
+
+  .sample__wrap {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sample__reborn {
+    display: flex;
+    align-items: center;
+  }
+  .sample__detail {
+    margin-left: auto;
+  }
+
+  .p {
+    display: flex;
+  }
+  .button__wrap h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+  }
+  .sample__car img {
+    max-height: 64px;
+    max-width: 150px;
+    margin: 28px 30px 40px 16px;
+  }
+
+  #day {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #90a3bf;
   }
 }
